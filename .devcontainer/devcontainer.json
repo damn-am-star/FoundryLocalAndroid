@@ -1,0 +1,14 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/stuartleeks/dev-container-features/add-host:1": {},
+		"ghcr.io/ait-assistive-autonomous-systems/devcontainer_features/add-groups:0": {
+			"addGroups": "4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),999(docker)",
+			"excludeGroups": "file://.devcontainer/exclude_host_groups"
+		},
+		"ghcr.io/devcontainer-community/devcontainer-features/add-script:1": {},
+		"ghcr.io/rails/devcontainer/features/activestorage:1": {
+			"variantProcessor": "mini_magick"
+		}
+	}
+}
